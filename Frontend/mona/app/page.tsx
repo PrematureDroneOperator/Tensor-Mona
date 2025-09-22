@@ -9,9 +9,8 @@ type DataItem = {
   z ?: string;
   risk ?: string;
 };
-
-const [data, setData] = useState<DataItem[]>([]);
 const MainPage = () => {
+  const [data, setData] = useState<DataItem[]>([]);
   const [isLoaded, setIsLoaded] = useState(false);
   const [consoleData, setConsoleData] = useState<DataItem[]>([]);
   const [currentTime, setCurrentTime] = useState(new Date());
@@ -42,7 +41,7 @@ const MainPage = () => {
     };
   }, []);
 
-  const formatTime = (date: Date) => {
+  const formatTime = (date : Date) => {
     return date.toLocaleTimeString('en-US', { 
       hour12: false,
       hour: '2-digit',
