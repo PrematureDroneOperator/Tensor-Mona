@@ -1,0 +1,65 @@
+{
+  "model_info": {
+    "creation_date": "2025-09-28 14:45:50",
+    "model_versions": {
+      "lstm_cnn": "v1.0",
+      "m5rules_ga": "v1.0",
+      "xgb_meta": "v1.0",
+      "dynamic_ensemble": "v1.0"
+    }
+  },
+  "performance_metrics": {
+    "lstm_cnn": {
+      "test_r2": 0.2858,
+      "safety_accuracy": 0.983
+    },
+    "m5rules_ga": {
+      "test_r2": -0.1193,
+      "safety_accuracy": 0.97,
+      "validation_rmse": 0.434145
+    },
+    "xgb_meta": {
+      "test_r2": 0.1492,
+      "rmse": 0.3363,
+      "mae": 0.2717
+    },
+    "dynamic_ensemble": {
+      "test_r2": 0.2397,
+      "safety_accuracy": 0.96,
+      "final_rmse": 0.3282
+    }
+  },
+  "critical_thresholds": {
+    "displacement_mm": 1.445,
+    "rainfall_mm": 5.245,
+    "pore_pressure_kpa": 309.75,
+    "fos_critical": 1.0,
+    "fos_safe": 1.2,
+    "fos_very_safe": 2.0
+  },
+  "feature_mapping": {
+    "input_features": [
+      "bench_height_m",
+      "unit_weight_kN_m3",
+      "cohesion_kPa",
+      "friction_angle_deg",
+      "slope_angle_deg"
+    ],
+    "sequence_length": 14,
+    "total_features": 220
+  },
+  "deployment_info": {
+    "api_endpoints": {
+      "health": "/api/health",
+      "mine_status": "/api/mine-status",
+      "risk_zones": "/api/risk-zones"
+    },
+    "update_frequency": "5_seconds",
+    "supported_formats": [
+      "json",
+      "csv"
+    ],
+    "mine_blocks_assessed": 100,
+    "risk_zones_active": 30
+  }
+}
