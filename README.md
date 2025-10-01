@@ -65,8 +65,8 @@ http://localhost:3000
 
 ## 🧠 Machine Learning
 
-**Coming Soon**
-
+**Built using ScKitLearn, pandas, etc**
+**Complete Pipeline Integration soon...**
 - Time-series forecasting for mine activity
 - Anomaly detection using transformer-based models
 - Synthetic + real-world dataset validation
@@ -84,7 +84,7 @@ Tensor-Mona/
 │   ├── pages/
 │   └── styles/
 ├── backend/         # Coming soon
-├── ml/              # Coming soon
+├── ml models/              
 └── README.md
 ```
 
