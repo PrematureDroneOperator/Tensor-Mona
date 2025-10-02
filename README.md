@@ -103,7 +103,7 @@ Tensor-Mona/
 
 | Layer      | Tools                              |
 |------------|-------------------------------------|
-| Frontend   | React, Tailwind CSS, Framer Motion |
+| Frontend   | React, Tailwind CSS, Three.js, Next.js |
 | Backend    | FastAPI, PostgreSQL, Redis         |
 | ML         | PyTorch, scikit-learn, Pandas      |
 
